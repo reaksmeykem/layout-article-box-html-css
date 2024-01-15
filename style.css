@@ -1,0 +1,56 @@
+body{
+    margin: 5% 10%;
+    font-family: 'Kantumruy Pro', sans-serif;
+}
+.items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 4;
+    grid-gap:2rem;
+}
+.item{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.image {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.image img{
+    border-radius: 12px;
+}
+.description {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.6) 100%);
+    min-height: 340px;
+    display: flex;
+    align-items: end;
+    border-radius: 12px;
+    margin: 0;
+    padding:0;
+}
+.description h2{
+    margin: 0;
+    padding: 12px 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.inner-description{
+    padding: 30px;
+   
+}
+.inner-description :is(span,  h2){
+    color: #fff;
+}
+.inner-description span:first-child{
+    background-color: #fff;
+    color: #333;
+    padding: 5px 12px;
+    border-radius: 25px;
+    margin-right: 12px;
+}
+
